@@ -11,7 +11,7 @@ class Films(BaseModel):
     name : str
     is_hollywood : Optional[bool] = False
 
-
+#root api
 @app.get('/')
 def index():
     return {'Messages':'Hello World!'}
