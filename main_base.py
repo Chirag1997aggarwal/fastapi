@@ -14,11 +14,13 @@ class Films(BaseModel):
 #root api
 @app.get('/')
 def index():
+    ''' Landing API for serving portal '''
     return {'Messages':'Hello World!'}
 
 #get all film recodes
 @app.get('/films')
 def all_films():
+    ''' Get all film records together'''
     return fakeDB
 
 #get specific film
